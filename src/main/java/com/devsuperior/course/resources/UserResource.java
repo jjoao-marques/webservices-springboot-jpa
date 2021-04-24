@@ -22,7 +22,7 @@ public class UserResource {
 	
 	@GetMapping
 	public ResponseEntity<List<User>> findAll() {
-		List<User> list = service.finfAll();
+		List<User> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
 	
